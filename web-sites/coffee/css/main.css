@@ -1,0 +1,530 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(80, 62, 52);
+    /* background-color: sienna; */
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-1,
+.img-2 {
+    position: absolute;
+}
+
+.img-1 {
+    margin: -150px, 0, 0, 0;
+    z-index: -2;
+    width: 450px;
+    height: auto;
+    right: 0;
+    /* background-color: blue; */
+    /* text-align: right; */
+}
+
+.img-2 {
+    margin: 0, 0, 0, -50px;
+    width: 450px;
+    height: auto;
+    right: 22%;
+    top: 5%;
+    z-index: -1;
+    /* text-align: left; */
+    /* background-color: red; */
+
+}
+
+header {
+    padding: 20px 20px;
+    width: 90%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header .logo {
+    width: 10%;
+    /* padding: 10px; */
+    /* background-color: blueviolet; */
+    /* top: 0; */
+    /* left: 5%; */
+    text-align: center;
+}
+
+header .logo h2 {
+    color: bisque;
+    width: 200px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    /* background-color: blue; */
+
+}
+
+header .menu-center {
+    margin: 0 auto 0 20%;
+    width: 43%;
+    height: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    /* background-color: bisque; */
+    border-radius: 20px;
+    /* padding: 10px; */
+    display: grid;
+    align-content: center;
+    padding: 15px 0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+header .menu-center ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    justify-content: space-around;
+    height: 30px;
+}
+
+header .menu-center ul li {
+    font-size: 17px;
+    margin-right: 20px;
+    padding: 5px;
+    align-items: center;
+    color: bisque;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+header .menu-center ul li:hover {
+    border-bottom: 2px solid rgb(186, 166, 142);
+    color: rgb(186, 166, 142);
+    margin-top: -5px;
+}
+
+header .menu-right {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 22%;
+    right: 2%;
+    align-items: center;
+    position: absolute;
+}
+
+header .menu-right .icon-coffee-1,
+header .menu-right .icon-basket {
+    border-radius: 50%;
+    color: bisque;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid bisque;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+header .menu-right .icon-coffee-1:hover,
+header .menu-right .icon-basket:hover {
+    color: rgb(186, 166, 142);
+    border: 2px solid rgb(186, 166, 142);
+}
+
+header .menu-right .create-order {
+    padding: 10px 20px;
+    /* background-color: rgb(69, 173, 138); */
+    overflow: hidden;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+
+    background: rgb(69, 173, 138);
+    background: linear-gradient(0deg,
+            rgba(69, 173, 138, 1) 0%,
+            rgb(121, 196, 171) 100%);
+
+}
+
+header .menu-right .create-order:active {
+    transform: translateY(10px);
+}
+
+main {
+    width: 100%;
+    padding: 20px 5px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* background-color: blueviolet; */
+}
+
+main .left {
+    width: 50%;
+    max-height: 350px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row; */
+    /* background-color: red; */
+}
+
+main .left .big-text {
+    margin: -20px 70px;
+    text-align: center;
+    width: 80%;
+    /* background-color: blue; */
+}
+
+main .left .big-text h2 {
+    font-size: 45px;
+    color: rgb(248, 209, 161);
+    text-align: left;
+}
+
+main .left .small-text {
+    margin: 20px 70px;
+    text-align: left;
+    width: 55%;
+    /* background-color: blue; */
+}
+
+main .left .small-text p {
+    font-size: 22px;
+    color: rgb(219, 196, 168);
+}
+
+main .left .choose-coffee {
+    margin: 30px 70px;
+    text-align: left;
+    left: 0;
+}
+
+main .left .choose-coffee-btn {
+    padding: 10px 50px;
+    /* background-color: rgb(69, 173, 138); */
+    overflow: hidden;
+    background: rgb(69, 173, 138);
+    background: linear-gradient(0deg,
+            rgba(69, 173, 138, 1) 0%,
+            rgb(121, 196, 171) 100%);
+
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+
+main .left .choose-coffee-btn:active {
+    transform: translateY(10px);
+}
+
+
+.buy-coffee {
+    position: relative;
+    width: 100%;
+    /* height: fit-content; */
+    /* text-align: center; */
+    /* background-color: red; */
+}
+
+.go-to-menu {
+    border-bottom: 1px solid bisque;
+    color: bisque;
+    font-size: 14px;
+    margin: -12% auto;
+    width: fit-content;
+}
+
+.containers {
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 170px auto;
+}
+
+
+
+.coffee-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 24px;
+    width: 200px;
+    height: 220px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coffee-img {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 25%;
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255, 228, 196, 0.7), rgba(255, 228, 196, 0.3));
+    /* background-color: rgb(255, 228, 196); */
+    border-radius: 24px;
+    justify-content: center;
+
+
+}
+
+.coffee-img img {
+    margin-top: -50px;
+    /* margin-bottom: 20px; */
+}
+
+.text-container {
+    width: 80%;
+    height: 50%;
+    color: bisque;
+    /* margin-top: 30%; */
+    /* background-color: red; */
+    margin: 35% auto 0 auto;
+}
+
+.text-container .coffee-description {
+    margin-top: -8%;
+    font-size: 14px;
+}
+
+.text-container .coffee-details {
+    border-bottom: 1px solid bisque;
+    font-size: 14px;
+    bottom: 22%;
+    left: 32%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.coffee-bottom-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.coffee-bottom-container .coffee-price {
+    color: bisque;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 13%;
+    bottom: 3%;
+}
+
+.coffee-bottom-container .icon-plus-1 {
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(69, 173, 138);
+    background: linear-gradient(0deg,
+            rgba(69, 173, 138, 1) 0%,
+            rgb(121, 196, 171) 100%);
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    right: 10%;
+    display: grid;
+    place-content: center;
+    transition: 0.3s;
+}
+
+.coffee-bottom-container .icon-plus-1:hover {
+    transform: rotate(90deg);
+    transform: duration(300px);
+}
+
+
+.about {
+    margin: 17% auto;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.about-center {
+    /* background-color: blue; */
+    text-align: center;
+    align-items: center;
+}
+
+.about-h2 {
+    text-align: center;
+    color: bisque;
+    font-size: 30px;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+}
+
+.about-img {
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.about-button {
+    width: 200px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    background: rgb(69, 173, 138);
+    background: linear-gradient(0deg,
+            rgba(69, 173, 138, 1) 0%,
+            rgb(121, 196, 171) 100%);
+    border: none;
+    transition: 0.3s;
+}
+
+.about-button:active {
+    transform: translateY(4px);
+}
+
+.about-containers {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.about-container {
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.number {
+    /* position: absolute; */
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    margin-top: -20px;
+    margin-left: -30px;
+}
+
+.about-cont-h2 {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: bisque;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.about-p {
+    font-size: 16px;
+    color: rgb(186, 166, 142);
+    width: 85%;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    line-height: 1.4;
+}
+
+.about-num-one {
+    top: 65px;
+}
+
+
+.test-container {
+    position: relative;
+    margin: -10% auto;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.test-container img {
+    z-index: -1;
+    right: 0;
+    position: absolute;
+    top: -200px;
+    filter: blur(5px);
+}
+
+.test {
+    position: relative;
+    background: linear-gradient(
+        135deg, 
+        rgba(255,255,255,0.1), 
+        rgba(255,255,255,0));
+
+    border-radius: 24px;
+    width: 85%;
+    height: 170px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.test .text-test {
+    margin-left: 50px;
+    /* padding: 10px 20px; */
+    font-size: 30px;
+    width: 40%;
+    color: bisque;
+    line-height: 1.3;
+}
+
+.button-test {
+    margin-left: 50px;
+    background: rgb(166, 124, 72);
+    background: linear-gradient(
+        0deg,
+        rgba(190, 149, 98, 1) 0%,
+        rgb(215, 180, 137) 100%);
+
+    border-radius: 24px;
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.button-test:active {
+    transform: translateY(4px);
+}
+
+.test img {
+    position: absolute;
+    top: -100px;
+    width: 450px;
+    height: 400px;
+    z-index: 99;
+    align-items: center;
+    filter: blur(0px);
+
+}
+
+.more-about {
+    color: rgb(186, 166, 142);
+    border-bottom: 1px solid rgb(186, 166, 142);
+    width: fit-content;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: -20px;
+}
