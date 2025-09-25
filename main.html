@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/fontello.css"> -->
+    <link rel="stylesheet" href="fonts/fontello-b649eaf8/css/fontello.css">
+    <!-- <link rel="stylesheet" href="fonts/fontello-064f60bb/css/fontello.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span><a href="main.html">Portfolio</a></span>
+            </div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="web-sites.html">Web-sites</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <div class="switch">
+                <label class="switch-light-dark-theme">
+                    <input type="checkbox" id="theme">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <main id="main">
+            <div class="content">
+                <div class="containers">
+                    <div class="content-container" onclick="navigateTo('web-sites/food mood/main.html')">
+                        <div class="for-frame">
+
+                            <iframe src="web-sites/food mood/main.html"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="content-container" onclick="navigateTo('web-sites/coffee/main.html')">
+                        <div class="for-frame second">
+
+                            <iframe src="web-sites/coffee/main.html"></iframe>
+
+                        </div>
+                    </div>
+                    <!-- <div class="content-container">
+                        <div class="for-frame">
+
+                            <iframe src=""></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="content-container">
+                        <div class="for-frame">
+
+                            <iframe src=""></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="content-container">
+                        <div class="for-frame">
+
+                            <iframe src=""></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="content-container">
+                        <div class="for-frame">
+
+                            <iframe src=""></iframe>
+
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Menu</th>
+                            <th>Contacts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td onclick="navigateTo('main.html')">Home</td>
+                            <div class="icons">
+                                <i onclick="openGmail()" class="icon-mail"></i> 
+                                <i onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)" class="icon-linkedin"></i>
+                                <i onclick="navigateTo(`https://github.com/lizia-web`)" class="icon-github-circled-1"></i> 
+                            
+                            </div>
+                        </tr>
+                        <tr>
+                            <td onclick="navigateTo('elements.html')">Elements</td>
+    
+                
+                <!-- <td>Email:contact.elizabethkarshina@gmail.com</td> -->
+                        </tr>
+                        <tr>
+                            <td onclick="navigateTo('web-sites.html')">Web-sites</td>
+                        </tr>
+                        <tr>
+                            <td onclick="navigateTo('contacts.html')">Contacts</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </div>
+            
+            <hr>
+
+            <p> © 2025 | Усі права захищені.</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
