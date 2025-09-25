@@ -1,0 +1,119 @@
+.container {
+    --background-color: white;
+    /* --background-color: darkorange; */
+    --text-color: black;
+    --element-background-color: white;
+    --element-text-color: black;
+    --element-border-color: black;
+
+    --card-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --card-webkit-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --card-moz-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --section-color: black;
+}
+
+.container.dark-theme {
+    --background-color: #101010;
+    --text-color: darkorange;
+    --element-background-color: #040303;
+    --element-text-color: darkorange;
+    --element-border-color: darkorange;
+    --element-container-border-color: darkorange;
+
+    --card-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --card-webkit-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --card-moz-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --section-color: darkorange;
+}
+
+
+main {
+    /* height: fit-content; */
+    /* width: 100%; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main .content-elements {
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+
+.section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.section h2 {
+    margin-right: 3px;
+
+}
+
+.section .line {
+    flex: 1;
+    height: 2px;
+    margin-top: 3px;
+    background-color: var(--section-color);
+}
+
+.elements-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,390px));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    
+    width: 95%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,350px));
+    grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    gap: 20px;
+}
+
+/* .buttons {
+    min-width: 200px;
+    min-height: 30px;
+} */
+
+.buttons button {
+    min-width: 200px;
+    min-height: 30px;
+    
+}
+
+.buttons .container-element {
+    padding: 50px;
+}
+
+.container-element {
+    /* position: relative; */
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    z-index: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    /* display: grid;
+    align-content: center;*/
+    align-items: center; 
+}
+
+.for-element {
+    margin: 5px;
+    width: 100%;
+    z-index: 10;
+}
