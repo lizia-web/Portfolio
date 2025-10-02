@@ -1,0 +1,1 @@
+$("li:contains(Home)").css("border-bottom","2.5px solid rgb(99, 53, 53)").css("height","calc(1em + 0.5px)");
