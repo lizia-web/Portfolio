@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
     left: 0;
 
-
 }
 
 
@@ -243,23 +242,23 @@ footer {
 .icons {
     position: absolute;
     /* background-color: red; */
-    top: 70px;
-    right: 36%;
+    top: 3.5em;
+    right: 37%;
     width: fit-content;
 }
 
 .icon-github-circled-1 {
     margin-left: -15px;
-    font-size: 27px;
+    font-size: 1.3em;
 }
 
 .icon-linkedin {
-    font-size: 30px;
+    font-size: 1.5em;
     margin-left: -5px;
 }
 
 .icon-mail {
-    font-size: 25px;
+    font-size: 1.3em;
     margin-top: -5px;
     font-weight: bold;
 }
@@ -286,302 +285,4 @@ footer hr {
 footer p {
     text-align: center;
     letter-spacing: 1px;
-}
-
-@media screen and (min-width:200px) and (max-width:400px){
-    header {
-        flex-direction: column;
-        height: 350px;
-        left: 0;
-    }
-
-    header .logo {
-        top: 20px;
-        left: 30%;
-        margin-bottom: 40px;
-        position: absolute;
-        font-size: 25px;
-    }
-
-    header ul {
-        /* background-color:red; */
-        position: absolute;
-        /* width: auto; */
-        /* width: 100%; */
-        flex-direction: column;
-        left: 0px;
-        right: 0px;
-        top: 90px;
-        /* flex: 0 1 auto; */
-    }
-
-    header ul li {
-
-        text-align: center;
-        /* width: 100%; */
-        margin-bottom: 10px;
-        padding: 10px 50px;
-
-    }
-
-    .switch {
-        display: block;
-        top: 30px;
-        align-content: center;
-        /* top: 50px; */
-        right: 40%;
-        /* padding: 10px; */
-        /* left: 50%;  */
-    }
-
-}
-
-@media screen and (min-width:850px) and (max-width:1000px) {
-    .icons {
-        position: absolute;
-        /* background-color: red; */
-        top: 5.3em;
-        margin-right: 2em;
-        /* right: 36%; */
-        width: fit-content;
-    }
-}
-
-@media screen and (min-width:800px) and (max-width:1000px) {
-    footer {
-        margin-top: auto;
-        padding: 5px;
-        width: 100%;
-        background-color: black;
-        color: darkorange;
-        position: relative;
-    }
-    
-    .footer-container {
-        /* width: 100%; */
-        margin: 0 auto;
-        width: fit-content;
-        /* background-color: aqua; */
-    }
-    
-    .footer-container table {
-        padding: 1.3em;
-        text-align: center;
-        border-spacing: 120px 0;
-
-    }
-    
-    .footer-container table th{
-        font-size: 1.4em;
-        padding: 0.7em;
-        width: 90%;
-        
-    }
-
-    
-    .footer-container table td {
-        font-size: 1.2em;
-        /* font-size: 17px; */
-        padding: 0.4em;
-        cursor: pointer;
-        
-    }
-    
-    .icons {
-        position: absolute;
-        /* background-color: red; */
-        top: 5.3em;
-        margin-right: -2.4em;
-        /* right: 36%; */
-        width: fit-content;
-    }
-    
-    .icon-github-circled-1 {
-        /* margin-left: -15px; */
-        font-size: 2em;
-    }
-    
-    .icon-linkedin {
-        font-size: 2em;
-        /* margin-left: -5px; */
-    }
-    
-    .icon-mail {
-        font-size: 1.8em;
-        margin-top: 5px;
-        font-weight: bold;
-    }
-    
-    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
-        /* margin-right: 7px; */
-        padding: 5px;
-        /* font-size: 25px; */
-        background: darkorange;
-        color: darkorange;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        transition: 0.8s;
-    }
-    
-}
-
-@media screen and (min-width:800px) and (max-width:1100px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    header {
-        flex-direction: column;
-        height: 350px;
-        left: 0;
-    }
-
-    header .logo {
-        top: 20px;
-        left: 30%;
-        margin-bottom: 40px;
-        position: absolute;
-        font-size: 25px;
-    }
-
-    header ul {
-        /* background-color:red; */
-        position: absolute;
-        /* width: auto; */
-        /* width: 100%; */
-        flex-direction: column;
-        left: 0px;
-        right: 0px;
-        top: 90px;
-        /* flex: 0 1 auto; */
-    }
-
-    header ul li {
-
-        text-align: center;
-        /* width: 100%; */
-        margin-bottom: 10px;
-        padding: 10px 50px;
-
-    }
-
-    .switch {
-        top: 30px;
-        align-content: center;
-        /* top: 50px; */
-        right: 40%;
-        /* padding: 10px; */
-        /* left: 50%;  */
-    }
-
-    .content {
-        width: 100%;
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
-    }
-
-    .containers {
-        width: 90%;
-        text-align: center;
-        position: relative;
-        align-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .icons {
-        right: 32%;
-    }
-}
-
-@media screen and (min-width:300px) and (max-width: 799px) {
-    header {
-        flex-direction: column;
-        height: 350px;
-        left: 0;
-    }
-
-    header .logo {
-        left: 25%;
-        top: 20px;
-        margin-bottom: 40px;
-        position: absolute;
-        font-size: 25px;
-    }
-
-    header ul {
-        /* background-color:red; */
-        position: absolute;
-        /* width: auto; */
-        /* width: 100%; */
-        flex-direction: column;
-        left: 0px;
-        right: 0px;
-        top: 90px;
-        /* flex: 0 1 auto; */
-    }
-
-    header ul li {
-
-        text-align: center;
-        /* width: 100%; */
-        margin-bottom: 10px;
-        padding: 10px 50px;
-
-    }
-
-    .switch {
-        top: 30px;
-        align-content: center;
-        /* top: 50px; */
-        right: 35%;
-        /* padding: 10px; */
-        /* left: 50%;  */
-    }
-
-    .content {
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
-    }
-
-    .containers {
-        text-align: center;
-        position: relative;
-        width: auto;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    }
-
-    .icons {
-        right: 27%;
-    }
-
-}
-
-@media screen and (min-width:200px) and (max-width:800px) {
-
-    .content {
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
-        /* left: 30%; */
-        /* right: 0; */
-    }
-
-    .containers {
-        /* position: relative;
-        text-align: center; */
-        /* background-color: red; */
-        display: grid;
-        margin: 0 auto;
-        width: fit-content;
-        width: 95%;
-        left: 20%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .content-container {
-        align-content: center;
-    }
 }
