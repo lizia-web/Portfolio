@@ -1,730 +1,707 @@
-<!DOCTYPE html>
-<html lang="en">
+.container {
+    --background-color: white;
+    /* --background-color: darkorange; */
+    --text-color: black;
+    --element-background-color: white;
+    --element-text-color: black;
+    --element-border-color: black;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    --card-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --card-webkit-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --card-moz-box-shadow: 10px 10px 48px -7px rgba(0, 0, 0, 0.75);
+    --section-color: black;
+}
+
+.container.dark-theme {
+    --background-color: #101010;
+    --text-color: darkorange;
+    --element-background-color: #040303;
+    --element-text-color: darkorange;
+    --element-border-color: darkorange;
+    --element-container-border-color: darkorange;
+
+    --card-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --card-webkit-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --card-moz-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.5);
+    --section-color: darkorange;
+}
+
+
+main {
+    /* height: fit-content; */
+    /* width: 100%; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main .content-elements {
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+
+.section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.section h2 {
+    margin-right: 3px;
+
+}
+
+.section .line {
+    flex: 1;
+    height: 2px;
+    margin-top: 3px;
+    background-color: var(--section-color);
+}
+
+.elements-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,390px));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
     
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="stylesheet" href="fonts/fontello-b649eaf8/css/fontello.css">
-    <!-- <link rel="stylesheet" href="fonts/fontello-94cfbf4a/css/fontello.css"> -->
-    <!-- <link rel="stylesheet" href="css/fontello.css"> -->
-    <link rel="stylesheet" href="css/elements.css">
-
-    <!-- <link rel="stylesheet" href="fonts/fontello-064f60bb/css/fontello.css"> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-    <title>Elements</title>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <span><a href="main.html">Portfolio</a></span>
-            </div>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="web-sites.html">Web-sites</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <div class="switch">
-                <label class="switch-light-dark-theme">
-                    <input type="checkbox" id="theme">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </header>
-
-        <main>
-            <div class="content-elements">
-                <div class="containers-element">
-
-
-                    <div class="section">
-                        <h2 class="section">Elements</h2>
-                        <div class="line"></div>
-                    </div>
-
-                    <div class="elements-block">
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <form>
-                                    <h1>Форма</h1>
-                                    <label>Ім'я</label><br>
-                                    <input type="text" name="Ім'я" required><br>
-                                    <label>Email</label><br>
-                                    <input type="email" name="Email" required><br>
-                                    <button class="form-button">Надіслати</button>
-                                </form>
-                                <style>
-                                    form {
-                                        min-width: 250px;
-                                        width: 90%;
-                                        padding: 10px;
-                                        /* width: 400px;
-                                        height: 300px; */
-                                        text-align: center;
-                                        border-radius: 5px;
-                                        background-color: #2fa564;
-                                        box-shadow: -3px 6px 16px -1px rgba(0, 0, 0, 0.87);
-                                        -webkit-box-shadow: -3px 6px 16px -1px rgba(0, 0, 0, 0.87);
-                                        -moz-box-shadow: -3px 6px 16px -1px rgba(0, 0, 0, 0.87);
-                                    }
-
-                                    input {
-                                        padding: 10px;
-                                        margin: 10px auto;
-                                        width: 90%;
-                                    }
-
-                                    label {
-                                        color: white;
-                                        font-weight: bold;
-                                    }
-
-                                    .form-button {
-                                        width: 90%;
-                                        height: 30px;
-                                        margin: 10px auto;
-                                        background-color: #ffffff;
-                                        border: none;
-                                        border-radius: 5px;
-                                        letter-spacing: 1px;
-                                        transition: 0.4s ease-in-out;
-                                    }
-
-                                    .form-button:hover {
-                                        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-                                        color: white;
-
-                                        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-                                        border: 1px solid rgba(0, 0, 0, 0.18)
-                                    }
-
-                                    h1 {
-                                        color: white;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Column 1</th>
-                                            <th>Column 2</th>
-                                            <th>Column 3</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Line 1</td>
-                                            <td>Line 2</td>
-                                            <td>Line 3</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Line 1</td>
-                                            <td>Line 2</td>
-                                            <td>Line 3</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Line 1</td>
-                                            <td>Line 2</td>
-                                            <td>Line 3</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Line 1</td>
-                                            <td>Line 2</td>
-                                            <td>Line 3</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Line 1</td>
-                                            <td>Line 2</td>
-                                            <td>Line 3</td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <style>
-                                    .for-element table {
-                                        position: relative;
-                                        margin-top: 10px;
-                                        margin-left: auto;
-                                        margin-right: auto;
-                                        padding: 10px;
-                                        text-align: center;
-                                        /*background-color: rgba(0,0,0,0.5);*/
-                                        border-collapse: collapse;
-                                        width: fit-content;
-                                    }
-
-                                    .for-element thead tr {
-                                        padding: 10px;
-                                        background-color: rgba(138, 43, 226, 0.5);
-                                        /*background-color: blueviolet;*/
-                                        color: white;
-                                    }
-
-                                    .for-element tr,
-                                    .for-element td,
-                                    .for-element th {
-                                        text-align: left;
-                                        padding: 15px;
-                                    }
-
-                                    .for-element tr,
-                                    .for-element td {
-                                        background-color: rgba(255, 255, 255, 0.2);
-                                        color: white;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-
-                        <div class="container-element">
-                            <div class="for-element">
-
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="card-face-front">
-                                            <h1 class="card">ICE LATTE</h1>
-                                            <p>Холодний кавовий напій, що складається з еспресо, молока та льоду, і
-                                                часто з
-                                                додаванням сиропу за смаком</p>
-                                            <img src="img/ice-latte.png">
-                                        </div>
-                                        <div class="card-face-back">
-                                            <p>1. Насипати в термос розчинну каву і цукор, залити теплою водою, закрити
-                                                термос і трохи потрясти, щоби все перемішалося. <br><br> 2.
-                                                У склянку покласти кригу, залити каву. <br><br>
-                                                3. Додати молока. За бажанням додати вершків або морозиво.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <style>
-                                    .card-container {
-                                        display: flex;
-                                        width: 300px;
-                                        height: 300px;
-                                        perspective: 1000px;
-                                        position: relative;
-                                        z-index: 9999;
-                                        isolation: isolate;
-                                        /* top: 100px; */
-                                    }
-
-                                    .card {
-                                        position: relative;
-                                        width: 100%;
-                                        height: 100%;
-                                        transform-style: preserve-3d;
-                                        transition: 0.8s;
-                                    }
-
-                                    .card h1 {
-                                        text-align: center;
-                                        position: relative;
-                                        top: 0;
-                                        z-index: 5;
-                                        color: rgba(109, 59, 1, 0.8);
-                                        /*color: rgba(109, 59, 1, 0.4);*/
-                                        letter-spacing: 3px;
-                                    }
-
-                                    .card-container:hover .card {
-                                        transform: rotateY(180deg);
-                                        /* transform: translateX(50%) rotateY(180deg); */
-                                    }
-
-                                    img {
-                                        z-index: 3;
-                                        width: 150px;
-                                        height: 300px;
-                                        /*background-color: red;*/
-                                        position: absolute;
-                                        top: 0;
-                                        right: 10px;
-                                        align-items: center;
-                                        transform: rotate(-15deg);
-                                    }
-
-                                    .card-face-front p {
-                                        padding: 10px;
-                                        position: absolute;
-                                        /*background-color: red;*/
-                                        top: 90px;
-                                        left: 10px;
-                                        letter-spacing: 1px;
-                                        width: 170px;
-                                        font-size: 17px;
-                                        line-height: 1.3;
-                                        color: rgb(70, 38, 1);
-                                        z-index: 5;
-                                    }
-
-                                    .card-face-front,
-                                    .card-face-back {
-                                        position: absolute;
-                                        width: 100%;
-                                        height: 100%;
-                                        backface-visibility: hidden;
-                                        background-color: #ebd6be;
-                                        /*background-color: rgba(235,214,190,0.7);*/
-                                        box-shadow: 14px 15px 46px -4px rgba(0, 0, 0, 0.81);
-                                        -webkit-box-shadow: 14px 15px 46px -4px rgba(0, 0, 0, 0.81);
-                                        -moz-box-shadow: 14px 15px 46px -4px rgba(0, 0, 0, 0.81);
-                                        border-radius: 10px;
-                                    }
-
-                                    .card-face-back {
-                                        transform: rotateY(180deg);
-                                    }
-
-                                    .card-face-back p {
-                                        padding: 5px 10px 10px 10px;
-                                        width: 250px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        font-size: 17px;
-                                        line-height: 1.3;
-                                        color: rgb(70, 38, 1);
-                                        letter-spacing: 1px;
-                                        /* top: 1%; */
-                                        left: 3%;
-                                        position: absolute;
-                                        z-index: 5;
-                                    }
-                                </style>
-
-                            </div>
-                        </div>
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <form class="form2">
-                                    <div class="input-group">
-                                        <input type="text" required="" autocomplete="off">
-                                        <label>Name</label>
-                                    </div>
-                                    <button class="glass">
-                                        <span>Button</span>
-                                    </button>
-                                    <span class="gradient-container">
-                                        <span class="gradient">
-
-                                        </span>
-                                    </span>
-                                </form>
-
-                                <style>
-                                    .container-form {
-                                        margin-top: 20px;
-                                        margin-left: 50px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        width: fit-content;
-                                        height: fit-content;
-                                        /*background-color: blue;*/
-                                        /*padding: 10px;*/
-                                        text-align: center;
-                                    }
-
-                                    .form2 {
-                                        width: 200px;
-                                        height: 200px;
-                                        border: none;
-                                        outline: none;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        padding: 10px;
-                                        text-align: center;
-                                        border-radius: 20px;
-                                        background-color: #3a3a3a;
-                                        position: relative;
-                                        transition: all 0.4s;
-
-                                    }
-
-                                    .form2::before {
-                                        content: "";
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                        background: rgba(255, 255, 255, 0.2);
-                                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-                                        width: 105%;
-                                        height: 105%;
-                                        border-radius: inherit;
-                                        z-index: -1;
-                                        transition: all 0.3s;
-                                    }
-
-                                    .gradient-container {
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                        border-radius: inherit;
-                                        width: 100%;
-                                        height: 100%;
-                                        overflow: hidden;
-                                        z-index: -1;
-                                        filter: blur(10px);
-                                        transition: all 0.4s;
-                                    }
-
-                                    .gradient {
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                        width: 100%;
-                                        aspect-ratio: 1;
-                                        border-radius: inherit;
-                                        transition: all 0.3s;
-                                        background-image: linear-gradient(90deg,
-                                                dodgerblue,
-                                                blueviolet,
-                                                hotpink,
-                                                lightcoral,
-                                                yellow,
-                                                greenyellow,
-                                                springgreen,
-                                                lightskyblue);
-                                        animation: rotate 2s linear infinite;
-                                        filter: blur(10px);
-                                    }
-
-                                    @keyframes rotate {
-                                        0% {
-                                            transform: translate(-50%, -50%) rotate(0deg);
-                                        }
-
-                                        50% {
-                                            transform: translate(-50%, -50%) rotate(180deg);
-                                        }
-
-                                        100% {
-                                            transform: translate(-50%, -50%) rotate(360deg);
-                                        }
-                                    }
-
-                                    .input-group {
-                                        position: relative;
-                                        max-width: 190px;
-                                        margin: 1em 0 1em 0;
-
-                                    }
-
-                                    .input-group input {
-                                        font-size: 100%;
-                                        padding: 10px;
-                                        /*height: 30px;*/
-                                        width: 90%;
-                                        background-color: transparent;
-                                        outline: none;
-                                        border: 2px solid rgb(250, 250, 250);
-                                    }
-
-                                    .input-group label {
-                                        top: 8px;
-                                        font-size: 100%;
-                                        position: absolute;
-                                        left: 0;
-                                        pointer-events: none;
-                                        transition: all 0.3s ease;
-                                        color: rgb(158, 157, 157);
-                                        font-size: 100%;
-                                        padding: 0.8em;
-                                        margin-left: 0.5em;
-                                    }
-
-                                    .input-group :is(input:focus, input:valid)~label {
-                                        transform: translateY(-50%) scale(.9);
-                                        margin: 0em;
-                                        margin-left: 1.3em;
-                                        padding: 0.4em;
-                                        background-color: #3a3a3a;
-
-                                    }
-
-                                    .glass {
-                                        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-                                        -webkit-backdrop-filter: blur(20px);
-                                        backdrop-filter: blur(20px);
-                                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-                                        border: 1px solid rgba(255, 255, 255, 0.18);
-                                        border-radius: 32px;
-                                        color: white;
-                                        letter-spacing: 2px;
-                                        width: 70%;
-                                        padding: 5px;
-                                    }
-
-                                    .glass:active {
-                                        transform: translateY(2px);
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="section">
-                        <h2 class="section">Buttons & Others</h2>
-                        <div class="line"></div>
-                    </div>
-
-                    <div class="buttons">
-
-
-                        <div class="container-element">
-                            <div class="for-element">
-
-                                <button class="border">Border</button>
-
-                                <style>
-                                    .border {
-                                        border: 4px solid rgb(255, 255, 255);
-                                        transition: 0.5s;
-                                        background-color: white;
-                                        font-weight: bold;
-                                        letter-spacing: 2px;
-
-                                        margin: 0px 10px 15px 15px;
-                                        min-width: 150px;
-                                        padding: 15px 20px;
-
-                                        z-index: 3;
-                                        /* border: none; */
-                                    }
-
-                                    .border:hover {
-                                        border-color: rgb(0, 0, 0);
-                                    }
-                                </style>
-
-                            </div>
-                        </div>
-
-                        <div class="container-element">
-                            <div class="for-element">
-
-                                <button class="shine">Shine</button>
-
-                                <style>
-                                    .shine {
-                                        /*height: 50px;*/
-                                        color: white;
-                                        /*opacity: 0.5;*/
-                                        border-radius: 20px;
-                                        background: linear-gradient(to right, red, blue, red);
-                                        background-size: 200% 100%;
-                                        animation: shine 6s infinite;
-
-                                        margin: 0 15px 15px 15px;
-                                        min-width: 150px;
-                                        padding: 15px 20px;
-                                        border: none;
-
-                                        z-index: 3;
-                                    }
-
-                                    @keyframes shine {
-                                        to {
-                                            background-position: 200% 0;
-                                        }
-                                    }
-                                </style>
-
-                            </div>
-                        </div>
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <button class="hover">Hover</button>
-
-                                <style>
-                                    .hover {
-                                        background-color: black;
-                                        color: white;
-                                        border: 2px solid black;
-                                        border-radius: 20px;
-                                        transition: 0.5s ease-out;
-
-                                        margin: 0px 10px 15px 15px;
-                                        min-width: 150px;
-                                        padding: 15px 20px;
-                                        border: none;
-                                    }
-
-                                    .hover:hover {
-                                        background-color: white;
-                                        color: black;
-                                    }
-                                </style>
-
-                            </div>
-                        </div>
-
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <button class="add"><span>Button</span></button>
-
-                                <style>
-                                    .add {
-                                        text-align: center;
-                                        display: inline-block;
-                                        transition: all 0.5s;
-                                        font-size: 17px;
-                                        width: 200px;
-                                        padding: 15px;
-                                        cursor: pointer;
-                                        vertical-align: middle;
-                                        background-color: black;
-                                        color: white;
-                                    }
-
-                                    .add span {
-                                        transition: 0.5s;
-                                        cursor: pointer;
-                                        display: inline-block;
-                                        position: relative;
-                                    }
-
-                                    .add span:after {
-                                        content: 'add';
-                                        position: absolute;
-                                        right: -20px;
-                                        top: 0;
-                                        opacity: 0;
-                                        transition: 0.5s;
-                                    }
-
-                                    .add:hover span {
-                                        padding-right: 35px;
-                                    }
-
-                                    .add:hover span:after {
-                                        opacity: 1;
-                                        right: 0;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-                        <div class="container-element">
-                            <div class="for-element">
-                                <button class="active">Button</button>
-
-                                <style>
-                                    .active {
-                                        font-weight: bold;
-                                        background-color: black;
-                                        box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.75);
-                                        -webkit-box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.75);
-                                        -moz-box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.75);
-                                        padding: 10px 20px;
-                                        color: white;
-                                        letter-spacing: 2px;
-                                    }
-
-                                    .active:active {
-                                        transform: translateY(3px);
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-
-
-                        <!-- <div class="container-element">
-                            <div class="for-element">
-                                
-                            </div>
-                        </div> -->
-
-                    </div>
-
-                    <!-- <div class="container-element">
-                        <div class="for-element">
-
-                        </div>
-                    </div> -->
-
-
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="footer-container">
-                <table class="footer-container">
-                    <thead>
-                        <tr>
-                            <th>Menu</th>
-                            <th>Contacts</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td onclick="navigateTo('main.html')">Home</td>
-                            <div class="icons">
-                                <i onclick="openGmail()" class="icon-mail"></i>
-                                <i onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)"
-                                    class="icon-linkedin"></i>
-                                <i onclick="navigateTo(`https://github.com/lizia-web`)"
-                                    class="icon-github-circled-1"></i>
-
-                            </div>
-                        </tr>
-                        <tr>
-                            <td onclick="navigateTo('elements.html')">Elements</td>
-
-
-                            <!-- <td>Email:contact.elizabethkarshina@gmail.com</td> -->
-                        </tr>
-                        <tr>
-                            <td onclick="navigateTo('web-sites.html')">Web-sites</td>
-                        </tr>
-                        <tr>
-                            <td onclick="navigateTo('contacts.html')">Contacts</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-            </div>
-
-            <hr>
-
-            <p> © 2025 | Усі права захищені.</p>
-        </footer>
-
-        <script src="js/main.js"></script>
-        <script src="js/elements.js"></script>
-    </div>
-</body>
-
-</html>
+    width: 95%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,350px));
+    grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    gap: 20px;
+}
+
+/* .buttons {
+    min-width: 200px;
+    min-height: 30px;
+} */
+
+.buttons button {
+    min-width: 200px;
+    min-height: 30px;
+    
+}
+
+.buttons .container-element {
+    padding: 50px;
+}
+
+.container-element {
+    /* position: relative; */
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    z-index: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    /* display: grid;
+    align-content: center;*/
+    align-items: center; 
+}
+
+.for-element {
+    margin: 5px;
+    width: 100%;
+    z-index: 10;
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 90%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 5%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .elements-block, .buttons{
+        width: 80%;
+        margin: 0 auto 0 -2%;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr;
+        /* background-color: red; */
+        /* margin-left: -2%; */
+    }
+
+    .elements-block .container-element {
+        width: fit-content;
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    .buttons .container-element {
+        width: fit-content;
+        max-width: 250px;
+        margin-bottom: 5%;
+    }
+
+
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -5.2em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+}
+
+@media screen and (min-width:401px) and (max-width:600px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 90%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 10%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .elements-block, .buttons{
+        width: 90%;
+        margin: 0 auto 0 -2%;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr;
+        /* background-color: red; */
+        /* margin-left: -2%; */
+    }
+
+    .elements-block .container-element {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    .buttons .container-element {
+        width: 70%;
+        max-width: 250px;
+        margin-bottom: 5%;
+    }
+
+
+
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -5.2em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+}
+
+@media screen and (min-width:601px) and (max-width:800px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 90%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .elements-block, .buttons{
+        width: 95%;
+        margin: 0 auto 0 auto;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr 1fr;
+        /* background-color: red; */
+        /* margin-left: -2%; */
+    }
+
+    .elements-block .container-element {
+        margin: 0 auto 5% auto;
+        width: 85%;
+        max-width: 400px;
+        /* margin-bottom: 5%; */
+    }
+
+    .buttons .container-element {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto 5% auto;
+        /* margin-bottom: 5%; */
+    }
+
+
+    
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -3em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+}
+
+@media screen and (min-width:801px) and (max-width:1100px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 95%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .elements-block, .buttons{
+        width: 92%;
+        margin: 0 auto 0 auto;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr 1fr;
+        /* background-color: red; */
+        /* margin-left: -2%; */
+    }
+
+    .elements-block .container-element {
+        margin: 0 auto 5% auto;
+        width: fit-content;
+        max-width: 600px;
+        /* margin-bottom: 5%; */
+    }
+
+    .buttons .container-element {
+        width:fit-content;
+        max-width: 400px;
+        margin: 0 auto 5% auto;
+        /* margin-bottom: 5%; */
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.8em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 1000px;
+        padding: 0.9em;
+        text-align: center;
+        margin: 0 auto;
+        border-spacing: 2em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.6em;
+        padding: 0.7em;
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.5em;
+        padding: 0.5em;
+        cursor: pointer;
+        max-width: 500px;
+        width: 50%;
+    }
+    
+    .icons {
+        margin-top: 1.7em;
+        margin-right: -9em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 2em;
+    }
+    
+    .icon-linkedin {
+        font-size: 2em;
+    }
+    
+    .icon-mail {
+        font-size: 2em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+
+    footer p {
+        padding: .4em;
+        font-size: 1.3em;
+    }
+
+}
+
+
