@@ -167,7 +167,7 @@ main .content-elements {
     }
 
     .elements-block, .buttons{
-        width: 90%;
+        width: 80%;
         margin: 0 auto 0 -2%;
         /* text-align: center; */
         position: relative;
@@ -177,8 +177,14 @@ main .content-elements {
         /* margin-left: -2%; */
     }
 
-    .container-element {
-        width: 80%;
+    .elements-block .container-element {
+        width: fit-content;
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    .buttons .container-element {
+        width: fit-content;
         max-width: 250px;
         margin-bottom: 5%;
     }
@@ -315,11 +321,18 @@ main .content-elements {
         /* margin-left: -2%; */
     }
 
-    .container-element {
-        width: 80%;
+    .elements-block .container-element {
+        width: 90%;
         max-width: 300px;
         margin-bottom: 5%;
     }
+
+    .buttons .container-element {
+        width: 70%;
+        max-width: 250px;
+        margin-bottom: 5%;
+    }
+
 
 
 
@@ -443,7 +456,7 @@ main .content-elements {
     }
 
     .elements-block, .buttons{
-        width: 90%;
+        width: 95%;
         margin: 0 auto 0 auto;
         /* text-align: center; */
         position: relative;
@@ -453,10 +466,22 @@ main .content-elements {
         /* margin-left: -2%; */
     }
 
-    .container-element {
-        max-width: 500px;
-        margin-bottom: 5%;
+    .elements-block .container-element {
+        margin: 0 auto 5% auto;
+        width: 85%;
+        max-width: 400px;
+        /* margin-bottom: 5%; */
     }
+
+    .buttons .container-element {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto 5% auto;
+        /* margin-bottom: 5%; */
+    }
+
+
+    
 
     footer {
         margin-top: auto;
@@ -578,7 +603,7 @@ main .content-elements {
     }
 
     .elements-block, .buttons{
-        width: 90%;
+        width: 92%;
         margin: 0 auto 0 auto;
         /* text-align: center; */
         position: relative;
@@ -588,9 +613,18 @@ main .content-elements {
         /* margin-left: -2%; */
     }
 
-    .container-element {
-        max-width: 700px;
-        margin-bottom: 5%;
+    .elements-block .container-element {
+        margin: 0 auto 5% auto;
+        width: fit-content;
+        max-width: 600px;
+        /* margin-bottom: 5%; */
+    }
+
+    .buttons .container-element {
+        width:fit-content;
+        max-width: 400px;
+        margin: 0 auto 5% auto;
+        /* margin-bottom: 5%; */
     }
 
     footer {
@@ -634,7 +668,7 @@ main .content-elements {
     }
     
     .icons {
-        margin-top: 1em;
+        margin-top: 1.7em;
         margin-right: -9em;
         width: fit-content;
     }
