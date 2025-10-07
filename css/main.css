@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: 'Fontello';
-    src: url("../fonts/fontello.ttf");
-} */
-
 @font-face {
     font-family: 'fontello';
     src: url("../fonts/fontello-b649eaf8/font/fontello.ttf");
@@ -14,6 +9,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     left: 0;
+
 }
 
 
@@ -43,7 +39,7 @@ main {
     display: grid;
     /*grid-template-rows: repeat(auto-fill, 1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 20px;
 }
 
 .content-container {
@@ -92,176 +88,554 @@ main {
     transform: translate(-7%, 0);
 }
 
-.content-container h1 {
-    /* width: 90%; */
-    /* position: absolute; */
-    text-align: center;
-    /* background-color: red; */
-    padding: 0 10px;
-    letter-spacing: 1px;
-}
-
-
-/*@media доробити адаптивність 
-соцмереж від правої частини вікна*/ 
-
-@media screen and (min-width:800px) and (max-width:1100px) {
-    body {
-        overflow-x: hidden;
-    }
-
+@media screen and (min-width:200px) and (max-width:400px){
+    
     header {
         flex-direction: column;
         height: 350px;
         left: 0;
+        /* width: 100%; */
     }
 
     header .logo {
         top: 20px;
-        left: 30%;
+        margin-left: -20%;
         margin-bottom: 40px;
+        /* display: block; */
         position: absolute;
         font-size: 25px;
     }
 
     header ul {
-        /* background-color:red; */
         position: absolute;
-        /* width: auto; */
-        /* width: 100%; */
         flex-direction: column;
         left: 0px;
-        right: 0px;
+        /* right: 0px; */
         top: 90px;
-        /* flex: 0 1 auto; */
+        width: 90%;
     }
 
     header ul li {
 
         text-align: center;
-        /* width: 100%; */
         margin-bottom: 10px;
         padding: 10px 50px;
 
     }
 
     .switch {
+        display: block;
         top: 30px;
-        align-content: center;
-        /* top: 50px; */
-        right: 40%;
-        /* padding: 10px; */
-        /* left: 50%;  */
+        justify-content: right;
+        margin-right: 5%;
     }
 
     .content {
         width: 100%;
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
+       
+        /* justify-content: left; */
     }
 
     .containers {
-        width: 90%;
-        text-align: center;
+        width: 100%;
+        /* text-align: center; */
         position: relative;
-        align-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* align-content: center; */
+        grid-template-columns: 1fr;
+        /* background-color: red; */
+        margin-left: -3%;
     }
 
-    .icons {
-        right: 32%;
+    .content-container {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 5%;
     }
+
+
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -5.2em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
 }
 
-@media screen and (min-width:300px) and (max-width: 799px) {
+@media screen and (min-width:401px) and (max-width:600px){
+    
     header {
         flex-direction: column;
         height: 350px;
         left: 0;
+        /* width: 100%; */
     }
 
     header .logo {
-        left: 25%;
         top: 20px;
+        margin-left: -20%;
         margin-bottom: 40px;
+        /* display: block; */
         position: absolute;
         font-size: 25px;
     }
 
     header ul {
-        /* background-color:red; */
         position: absolute;
-        /* width: auto; */
-        /* width: 100%; */
         flex-direction: column;
         left: 0px;
-        right: 0px;
+        /* right: 0px; */
         top: 90px;
-        /* flex: 0 1 auto; */
+        width: 90%;
     }
 
     header ul li {
 
         text-align: center;
-        /* width: 100%; */
         margin-bottom: 10px;
         padding: 10px 50px;
 
     }
 
     .switch {
+        display: block;
         top: 30px;
-        align-content: center;
-        /* top: 50px; */
-        right: 35%;
-        /* padding: 10px; */
-        /* left: 50%;  */
+        justify-content: right;
+        margin-right: 10%;
     }
 
     .content {
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
+        width: 100%;
+       
+        /* justify-content: left; */
     }
 
     .containers {
-        text-align: center;
+        width: 100%;
+        /* text-align: center; */
         position: relative;
-        width: auto;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    }
-
-    .icons {
-        right: 27%;
-    }
-
-}
-
-@media screen and (min-width:200px) and (max-width:800px) {
-
-    .content {
-        /* text-align: center;
-        position: relative; */
-        align-content: center;
-        /* left: 30%; */
-        /* right: 0; */
-    }
-
-    .containers {
-        /* position: relative;
-        text-align: center; */
+        /* align-content: center; */
+        grid-template-columns: 1fr;
         /* background-color: red; */
-        display: grid;
-        margin: 0 auto;
-        width: fit-content;
-        width: 95%;
-        left: 20%;
-        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0%;
     }
 
     .content-container {
-        align-content: center;
+        width: 80%;
+        max-width: 400px;
+        margin-bottom: 5%;
     }
+
+
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -5.2em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
 }
+
+@media screen and (min-width:601px) and (max-width:800px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 90%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .containers {
+        width: 100%;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr 1fr;
+        /* background-color: red; */
+        margin-left: -2%;
+    }
+
+    .content-container {
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.4em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.2em;
+        padding: 0.7em;
+
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.1em;
+        padding: 0.4em;
+        cursor: pointer;
+        
+    }
+    
+    .icons {
+        margin-right: -3em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+}
+
+@media screen and (min-width:801px) and (max-width:1100px){
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        /* width: 100%; */
+    }
+
+    header .logo {
+        top: 20px;
+        margin-left: -20%;
+        margin-bottom: 40px;
+        /* display: block; */
+        position: absolute;
+        font-size: 25px;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        /* right: 0px; */
+        top: 90px;
+        width: 95%;
+    }
+
+    header ul li {
+
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 50px;
+
+    }
+
+    .switch {
+        display: block;
+        top: 30px;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+       
+        /* justify-content: left; */
+    }
+
+    .containers {
+        width: 100%;
+        /* text-align: center; */
+        position: relative;
+        /* align-content: center; */
+        grid-template-columns: 1fr 1fr;
+        /* background-color: red; */
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+
+    .content-container {
+        max-width: 600px;
+        margin-bottom: 10%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.8em;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   
+     .footer-container table {
+        width: 90%;
+        max-width: 1000px;
+        padding: 0.9em;
+        text-align: center;
+        margin: 0 auto;
+        border-spacing: 2em 0;
+
+    }
+    
+    .footer-container table th{
+        font-size: 1.6em;
+        padding: 0.7em;
+    }
+
+    
+    .footer-container table td {
+        font-size: 1.5em;
+        padding: 0.5em;
+        cursor: pointer;
+        max-width: 500px;
+        width: 50%;
+    }
+    
+    .icons {
+        margin-top: 1em;
+        margin-right: -6.3em;
+        width: fit-content;
+    }
+    
+    .icon-github-circled-1 {
+        font-size: 1.3em;
+    }
+    
+    .icon-linkedin {
+        font-size: 1.3em;
+    }
+    
+    .icon-mail {
+        font-size: 1.3em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .icon-mail, .icon-linkedin, .icon-github-circled-1 {
+        padding: 5px;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    } 
+
+
+    footer p {
+        padding: .4em;
+        font-size: 1.3em;
+    }
+
+}
+
+
+
