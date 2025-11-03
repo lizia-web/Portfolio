@@ -24,6 +24,10 @@ function navigateTo(url) {
     window.open(url, '_blank');
 }
 
+function navigateToMenu(url) {
+    window.open(url, '_self');
+}
+
 function openGmail() {
     const email = 'contact.elizabethkarshina@gmail.com';
     const subject = encodeURIComponent('Запит з веб-сайту');
