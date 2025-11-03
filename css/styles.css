@@ -9,9 +9,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     left: 0;
-
 }
-
 
 ::selection {
     background-color: darkorange;
@@ -24,11 +22,10 @@ body {
     min-height: 100vh;
 
     --background-color: white;
-    /* --background-color: darkorange; */
     --text-color: black;
-    --element-background-color: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    --element-background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     --element-text-color: black;
-    
+
     --element-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     --element-border-color: white;
 
@@ -38,22 +35,11 @@ body {
 
 .container.dark-theme {
     --background-color: #101010;
-    /* --background-color: #1d1d1d; */
     --text-color: darkorange;
-    /* --element-background-color : #1d1d1d; */
     --element-background-color: rgba(255, 140, 0, 0.9);
-    /* --element-background-color: #040303; */
-    /* --element-text-color: white; */
     --element-text-color: darkorange;
-    /* --element-text-color: black; */
-    /* --element-border-color: white; */
     --element-border-color: darkorange;
-    /* --element-container-border-color: darkorange; */
-    /* --element-container-border-color: white; */
-    /* --element-container-border-color: darkorange; */
     --element-box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.37);
-
-    /* --element-box-shadow: none; */
 }
 
 a {
@@ -65,42 +51,29 @@ header {
     padding: 5px;
     position: relative;
     width: 100%;
-    /* max-width: 1200px; */
-    /*background-color: blue;*/
     background-color: black;
-    /*background-color: black;*/
     height: 60px;
-    /*color: white;*/
     display: flex;
-    /*flex-direction: row;*/
     align-items: center;
     color: darkorange;
 
 }
 
 header .logo {
-    /*align-items: center;*/
-    /*background-color: darkorange;*/
-    /*color: black;*/
     font-size: 25px;
     padding: 10px;
     font-weight: bold;
     letter-spacing: 1px;
     margin-left: 70px;
-    /*position: absolute;*/
     transition: 0.3s;
 }
 
 header ul {
-    /*width: fit-content;*/
     display: flex;
     flex-direction: row;
     list-style: none;
-    /*text-align: center;*/
-    /*right: 0;*/
     left: 35%;
     align-content: center;
-    /*background-color: red;*/
     position: absolute;
 }
 
@@ -113,30 +86,21 @@ header ul li {
     padding: 5px 10px;
     letter-spacing: 2px;
     border: 2px solid darkorange;
-    /* text-transform: uppercase; */
     transition: 0.5s;
-
+    cursor: pointer;
 
 }
 
 header ul li:hover {
-    /*background-color: rgba(255,140,0, 0.8);*/
     background-color: rgba(255, 140, 0, 1);
     color: black;
-    /*letter-spacing: 1px;*/
-    /*font-weight: bold;*/
 }
 
 
 
 .switch {
-    /* flex-direction: flex-end; */
-    /* position: fixed; */
     position: absolute;
-    /* padding: 10px; */
     right: 80px;
-    /* right: 80px; */
-    /* background-color: blueviolet; */
 }
 
 .switch-light-dark-theme {
@@ -179,7 +143,6 @@ header ul li:hover {
     top: 50%;
     transform: translateY(-50%);
     background-color: darkorange;
-    /*background: linear-gradient(40deg, black, darkorange );*/
     transition: .4s;
 }
 
@@ -199,7 +162,6 @@ main {
     color: var(--text-color);
 }
 
-
 footer {
     margin-top: auto;
     padding: 5px;
@@ -210,63 +172,61 @@ footer {
 }
 
 .footer-container {
-    /* width: 100%; */
     margin: 0 auto;
     width: fit-content;
-    /* background-color: aqua; */
 }
 
 .footer-container table {
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
 }
 
-.footer-container table th{
-    font-size: 19px;
-    padding: 7px;
-    
+.footer-container table th {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+
 }
 
 .footer-container table {
-    margin-right: 15px;
-    border-spacing: 120px 0;
+    margin-right: 1rem;
+    border-spacing: 8rem 0;
 }
 
 .footer-container table td {
-    font-size: 17px;
-    padding: 8px;
+    font-size: 1.05rem;
+    padding: 0.55rem;
     cursor: pointer;
-    
+
 }
 
 .icons {
     position: absolute;
-    /* background-color: red; */
-    top: 3.5em;
+    top: 4rem;
     right: 37%;
     width: fit-content;
 }
 
 .icon-github-circled-1 {
-    margin-left: -15px;
-    font-size: 1.3em;
+    margin-left: -1rem;
+    font-size: 1.4rem;
 }
 
 .icon-linkedin {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-left: -5px;
 }
 
 .icon-mail {
-    font-size: 1.3em;
-    margin-top: -5px;
+    font-size: 1.3rem;
+    margin-top: -0.4rem;
     font-weight: bold;
 }
 
-.icon-mail, .icon-linkedin, .icon-github-circled-1 {
-    margin-right: 7px;
-    padding: 5px;
-    /* font-size: 25px; */
+.icon-mail,
+.icon-linkedin,
+.icon-github-circled-1 {
+    margin-right: 0.5rem;
+    padding: 0.3rem;
     background: darkorange;
     color: darkorange;
     -webkit-text-fill-color: transparent;
@@ -278,11 +238,471 @@ footer hr {
     width: 95%;
     border: none;
     height: 1px;
-    background-color:rgba(255, 140, 0, 1);
-    margin-bottom: 5px;
+    background-color: rgba(255, 140, 0, 1);
+    margin-bottom: 0.4rem;
 }
 
 footer p {
     text-align: center;
     letter-spacing: 1px;
+}
+
+
+@media screen and (min-width:200px) and (max-width:400px) {
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+    }
+
+    header .logo {
+        top: 1.25rem;
+        margin-left: -20%;
+        margin-bottom: 2.3rem;
+        position: absolute;
+        font-size: 1.45rem;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5.6rem;
+        width: 90%;
+    }
+
+    header ul li {
+        text-align: center;
+        margin-bottom: 0.7rem;
+        padding: 0.6rem 3.25rem;
+    }
+
+    .switch {
+        display: block;
+        top: 1.8rem;
+        justify-content: right;
+        margin-right: 5%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .containers {
+        width: 100%;
+        position: relative;
+        grid-template-columns: 1fr;
+        margin-left: -3%;
+    }
+
+    .content-container {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.4rem;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem;
+        text-align: center;
+        margin: 0 auto;
+
+        border-spacing: 1rem 0;
+
+    }
+
+    .footer-container table th {
+        font-size: 1.2rem;
+        padding: 0.7rem;
+
+    }
+
+
+    .footer-container table td {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        cursor: pointer;
+
+    }
+
+    .icons {
+        margin-right: -5.8rem;
+        width: fit-content;
+    }
+
+    .icon-github-circled-1 {
+        font-size: 1.3rem;
+    }
+
+    .icon-linkedin {
+        font-size: 1.4rem;
+    }
+
+    .icon-mail {
+        font-size: 1.3rem;
+        margin-top: 0.4rem;
+        font-weight: bold;
+    }
+
+    .icon-mail,
+    .icon-linkedin,
+    .icon-github-circled-1 {
+        padding: 0.3rem;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    }
+}
+
+
+@media screen and (min-width:401px) and (max-width:600px) {
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+    }
+
+    header .logo {
+        top: 1.25rem;
+        margin-left: -20%;
+        margin-bottom: 2.5rem;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5.6rem;
+        width: 90%;
+    }
+
+    header ul li {
+        text-align: center;
+        margin-bottom: 0.6rem;
+        padding: 0.6rem 3.1rem;
+    }
+
+    .switch {
+        display: block;
+        top: 1.8rem;
+        justify-content: right;
+        margin-right: 10%;
+    }
+
+    .content {
+        width: 100%;
+    }
+    
+    footer {
+        margin-top: auto;
+        padding: 0.4rem;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem;
+        text-align: center;
+        margin: 0 auto;
+        border-spacing: 1rem 0;
+    }
+
+    .footer-container table th {
+        font-size: 1.3rem;
+        padding: 0.7rem;
+    }
+
+
+    .footer-container table td {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+        cursor: pointer;
+    }
+
+    .icons {
+        margin-right: -6rem;
+        width: fit-content;
+    }
+
+    .icon-github-circled-1 {
+        font-size: 1.3rem;
+    }
+
+    .icon-linkedin {
+        font-size: 1.3rem;
+    }
+
+    .icon-mail {
+        font-size: 1.3rem;
+        margin-top: 0.4rem;
+        font-weight: bold;
+    }
+
+    .icon-mail,
+    .icon-linkedin,
+    .icon-github-circled-1 {
+        padding: 0.4rem;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+    }
+
+    header .logo {
+        top: 1.2rem;
+        margin-left: -20%;
+        margin-bottom: 2.5rem;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5.6rem;
+        width: 90%;
+    }
+
+    header ul li {
+        text-align: center;
+        margin-bottom: 0.6rem;
+        padding: 0.6rem 3.1rem;
+    }
+
+    .switch {
+        display: block;
+        top: 1.8rem;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.4rem;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container table {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem;
+        text-align: center;
+        margin: 0 auto;
+        border-spacing: 1.2rem 0;
+    }
+
+    .footer-container table th {
+        font-size: 1.3rem;
+        padding: 0.7rem;
+    }
+
+
+    .footer-container table td {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+        cursor: pointer;
+    }
+
+    .icons {
+        margin-right: -4rem;
+        width: fit-content;
+    }
+
+    .icon-github-circled-1 {
+        font-size: 1.3rem;
+    }
+
+    .icon-linkedin {
+        font-size: 1.3rem;
+    }
+
+    .icon-mail {
+        font-size: 1.3rem;
+        margin-top: 0.4rem;
+        font-weight: bold;
+    }
+
+    .icon-mail,
+    .icon-linkedin,
+    .icon-github-circled-1 {
+        padding: 0.4rem;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1100px) {
+
+    header {
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+    }
+
+    header .logo {
+        top: 1.2rem;
+        margin-left: -20%;
+        margin-bottom: 2.5rem;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5.6rem;
+        width: 95%;
+    }
+
+    header ul li {
+        text-align: center;
+        margin-bottom: 0.6rem;
+        padding: 0.6rem 3.1rem;
+    }
+
+    .switch {
+        display: block;
+        top: 1.8rem;
+        justify-content: right;
+        margin-right: 25%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 0.8rem;
+        width: 100%;
+        background-color: black;
+        color: darkorange;
+        position: relative;
+        justify-content: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container table {
+        width: 80%;
+        max-width: 800px;
+        padding: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        border-spacing: 1rem 0;
+    }
+
+    .footer-container table th {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+    }
+
+
+    .footer-container table td {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+        cursor: pointer;
+        max-width: 500px;
+        width: 50%;
+    }
+
+    .icons {
+        margin-top: 1rem;
+        margin-right: -8rem;
+        width: fit-content;
+    }
+
+    .icon-github-circled-1 {
+        font-size: 1.7rem;
+    }
+
+    .icon-linkedin {
+        font-size: 1.7rem;
+    }
+
+    .icon-mail {
+        font-size: 1.7rem;
+        margin-top: 0.4rem;
+        font-weight: bold;
+    }
+
+    .icon-mail,
+    .icon-linkedin,
+    .icon-github-circled-1 {
+        padding: 0.4rem;
+        background: darkorange;
+        color: darkorange;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: 0.8s;
+    }
+
+
+    footer p {
+        padding: 0.4rem;
+        font-size: 1.3rem;
+    }
 }
