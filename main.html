@@ -4,15 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="css/styles.css">
-
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/fontello.css"> -->
     <link rel="stylesheet" href="fonts/fontello-b649eaf8/css/fontello.css">
-    <!-- <link rel="stylesheet" href="fonts/fontello-064f60bb/css/fontello.css"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Home</title>
 </head>
@@ -24,10 +19,11 @@
                 <span><a href="main.html">Portfolio</a></span>
             </div>
             <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="web-sites.html">Web-sites</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li onclick="navigateToMenu('main.html')">Home</li>
+                <li onclick="navigateToMenu('elements.html')">Elements</li>
+                <li onclick="navigateToMenu('web-sites.html')">Web-sites</li>
+                <li onclick="navigateToMenu('contacts.html')">Contacts</li>
+
             </ul>
             <div class="switch">
                 <label class="switch-light-dark-theme">
@@ -36,7 +32,7 @@
                 </label>
             </div>
         </header>
-        <main >
+        <main>
             <div class="content">
                 <div class="containers">
                     <div class="content-container" onclick="navigateTo('web-sites/food mood/main.html')">
@@ -53,19 +49,17 @@
 
                         </div>
                     </div>
-                     <div class="content-container" onclick="navigateTo('web-sites/food_eat/main.html')">
+                    <div class="content-container" onclick="navigateTo('web-sites/food_eat/main.html')">
                         <div class="for-frame">
 
                             <iframe src="web-sites/food_eat/main.html"></iframe>
 
                         </div>
                     </div>
-
-            
-
                 </div>
             </div>
         </main>
+
         <footer>
             <div class="footer-container">
                 <table>
@@ -77,34 +71,36 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td onclick="navigateTo('main.html')">Home</td>
+                            <td onclick="navigateToMenu('main.html')">Home</td>
                             <td>
                                 <div class="icons">
-                                    <i onclick="openGmail()" class="icon-mail"></i> 
-                                    <i onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)" class="icon-linkedin"></i>
-                                    <i onclick="navigateTo(`https://github.com/lizia-web`)" class="icon-github-circled-1"></i> 
-                                
+                                    <i onclick="openGmail()" class="icon-mail"></i>
+                                    <i onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)"
+                                        class="icon-linkedin"></i>
+                                    <i onclick="navigateTo(`https://github.com/lizia-web`)"
+                                        class="icon-github-circled-1"></i>
+
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('elements.html')">Elements</td>
-    
-                
-                <!-- <td>Email:contact.elizabethkarshina@gmail.com</td> -->
+                            <td onclick="navigateToMenu('elements.html')">Elements</td>
+
+
+
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('web-sites.html')">Web-sites</td>
+                            <td onclick="navigateToMenu('web-sites.html')">Web-sites</td>
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('contacts.html')">Contacts</td>
+                            <td onclick="navigateToMenu('contacts.html')">Contacts</td>
                         </tr>
                     </tbody>
                 </table>
 
-                
+
             </div>
-            
+
             <hr>
 
             <p> © 2025 | Усі права захищені.</p>
@@ -115,4 +111,3 @@
 </body>
 
 </html>
-
