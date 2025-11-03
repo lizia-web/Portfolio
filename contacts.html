@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contacts.css">
-    
     <link rel="stylesheet" href="fonts/fontello-b649eaf8/css/fontello.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +20,10 @@
                 <span><a href="main.html">Portfolio</a></span>
             </div>
             <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="web-sites.html">Web-sites</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li onclick="navigateToMenu('main.html')">Home</li>
+                <li onclick="navigateToMenu('elements.html')">Elements</li>
+                <li onclick="navigateToMenu('web-sites.html')">Web-sites</li>
+                <li onclick="navigateToMenu('contacts.html')">Contacts</li>
             </ul>
             <div class="switch">
                 <label class="switch-light-dark-theme">
@@ -35,11 +34,8 @@
         </header>
 
         <main>
-
             <div class="containers">
-
                 <div class="resume-container">
-
                     <h2 class="resume-h2">Резюме</h2>
                     <hr class="line-hr">
                     <h3 class="header-h3">Особиста інформація</h3>
@@ -47,28 +43,27 @@
                     <h4 class="header-h4">Каршина Єлизавета Валентинівна</h4>
 
                     <p class="info-p">21 рік</p>
-                    <p class="info-p">м. Шептицький</p>
+                    <p class="info-p">м. Шептицький, Львівська область</p>
 
 
                     <h3 class="header-h3">Бажана посада</h3>
 
-
                     <p class="info-p"><b>Веб-розробник</b></p>
-                    <p class="info-p">Неповна зайнятість, віддалена робота</p>
+                    <p class="info-p">Неповна зайнятість, повна зайнятість, віддалена робота</p>
 
                     <h3 class="header-h3">Досвід роботи</h3>
 
                     <p class="info-p"><b>Вчитель з програмування (8 місяців)</b></p>
 
                     <ul class="info-ul">
-                        <li class="info-li">Спілкування з клієнтами </li>
+                        <li class="info-li">Спілкування з клієнтами</li>
                         <li class="info-li">Вирішення проблем</li>
                         <li class="info-li">Надання інформації про компанію</li>
                         <li class="info-li">Консультації</li>
                         <li class="info-li">Підготовка матеріалів </li>
                         <li class="info-li">Індивідуальний підхід </li>
                         <li class="info-li">Постійне навчання та розвиток професійних навичок</li>
-                        <li class="info-li"> Планування та організація своєї роботи</li>
+                        <li class="info-li">Планування та організація своєї роботи</li>
                     </ul>
 
                     <h3 class="header-h3">Освіта</h3>
@@ -81,7 +76,7 @@
                     <h3 class="header-h3"><b>Ключові навички</b></h3>
 
                     <ul class="info-ul">
-                        <li class="info-li">Досконало володію Microsoft Word, Excel, Visio, Google Docs, Google Sheets.
+                        <li class="info-li">Microsoft Word, Excel, Visio, Google Docs, Google Sheets.
                             Трохи Power Point, Access.</li>
 
 
@@ -89,18 +84,14 @@
 
 
                         <li class="info-li">Мови програмування: C++, Python, PHP, JavaScript. Трохи Java, C#. (За
-                            необхідністю можу
-                            опанувати нові мови програмування)</li>
-
-                        <li class="info-li">React, jQuery</li>
+                            необхідністю можу опанувати нові мови програмування)</li>
 
 
                         <li class="info-li">Швидкий друк, володіння комп'ютером та використання його функцій.</li>
 
 
                         <li class="info-li">Комунікабельність, спілкування з клієнтами та готовність до вирішення
-                            проблем. Допомога та
-                            консультації.</li>
+                            проблем. Допомога та консультації.</li>
 
 
                         <li class="info-li">Писання коду та виправлення помилок</li>
@@ -129,8 +120,6 @@
                         описати недоліки програми та баги.</p>
 
                     <a target="_blank" class="info-p" href="files/Certificate_UA.pdf">Сертифікат</a>
-
-
                 </div>
 
                 <div class="contacts-container">
@@ -138,16 +127,18 @@
                     <hr class="line-hr">
                     <div class="contacts">
                         <p class="info-p marg"><b>+ 38 (097) - 071 - 21 - 33</b></p>
-                        <p class="info-p curs marg" onclick="openGmail()"><b>Gmail:</b> contact.elizabethkarshina@gmail.com</p>
-                        <a class="info-p contact curs" target="_blank" href="https://t.me/always_in_overfuck"><b>Telegram:</b> @always_in_overfuck</a>
-                        <a class="info-p contact curs" target="_blank" onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)"><b>LinkedIn:</b> liza karshina</a>
-                        <a class="info-p contact curs" target="_blank" href="https://github.com/lizia-web"><b>GitHub:</b> lizia</a>
+                        <p class="info-p curs marg" onclick="openGmail()"><b>Gmail:</b>
+                            contact.elizabethkarshina@gmail.com</p>
+                        <a class="info-p contact curs" target="_blank"
+                            href="https://t.me/always_in_overfuck"><b>Telegram:</b> @always_in_overfuck</a>
+                        <a class="info-p contact curs" target="_blank"
+                            onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)"><b>LinkedIn:</b>
+                            liza karshina</a>
+                        <a class="info-p contact curs" target="_blank"
+                            href="https://github.com/lizia-web"><b>GitHub:</b> lizia</a>
                     </div>
-
                 </div>
-
             </div>
-
         </main>
 
         <footer>
@@ -161,44 +152,34 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td onclick="navigateTo('main.html')">Home</td>
+                            <td onclick="navigateToMenu('main.html')">Home</td>
                             <div class="icons">
                                 <i onclick="openGmail()" class="icon-mail"></i>
                                 <i onclick="navigateTo(`https://www.linkedin.com/in/liza-karshina-795664380`)"
                                     class="icon-linkedin"></i>
                                 <i onclick="navigateTo(`https://github.com/lizia-web`)"
                                     class="icon-github-circled-1"></i>
-
                             </div>
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('elements.html')">Elements</td>
-
-
-                            <!-- <td>Email:contact.elizabethkarshina@gmail.com</td> -->
+                            <td onclick="navigateToMenu('elements.html')">Elements</td>
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('web-sites.html')">Web-sites</td>
+                            <td onclick="navigateToMenu('web-sites.html')">Web-sites</td>
                         </tr>
                         <tr>
-                            <td onclick="navigateTo('contacts.html')">Contacts</td>
+                            <td onclick="navigateToMenu('contacts.html')">Contacts</td>
                         </tr>
                     </tbody>
                 </table>
-
-
             </div>
-
             <hr>
-
             <p> © 2025 | Усі права захищені.</p>
         </footer>
 
         <script src="js/main.js"></script>
         <script src="js/contacts.js"></script>
-
     </div>
 </body>
 
 </html>
-
